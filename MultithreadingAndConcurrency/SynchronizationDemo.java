@@ -13,7 +13,8 @@ class BankAccount {
     /**
      * Withdraws an amount from the account.
      * This method is synchronized to prevent inconsistent states
-     * when accessed by multiple threads.
+     * when accessed by multiple threads. This prevents race conditions
+     * and ensures the balance is not updated inconsistently.
      * 
      * @param amount The amount to withdraw.
      */
